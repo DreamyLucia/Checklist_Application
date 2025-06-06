@@ -1,3 +1,11 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",  // 设置基础路径
+    "paths": {
+      "@src/*": ["src/*"]  // 配置路径别名
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "App.tsx"],  // 确保包含你的 TS 文件
+  "exclude": ["node_modules"]
 }

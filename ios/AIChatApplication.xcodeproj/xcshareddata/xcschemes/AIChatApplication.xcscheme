@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "AIChatApplication.app"
-               BlueprintName = "AIChatApplication"
-               ReferencedContainer = "container:AIChatApplication.xcodeproj">
+               BuildableName = "CheckListApplication.app"
+               BlueprintName = "CheckListApplication"
+               ReferencedContainer = "container:CheckListApplication.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "AIChatApplicationTests.xctest"
-               BlueprintName = "AIChatApplicationTests"
-               ReferencedContainer = "container:AIChatApplication.xcodeproj">
+               BuildableName = "CheckListApplicationTests.xctest"
+               BlueprintName = "CheckListApplicationTests"
+               ReferencedContainer = "container:CheckListApplication.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AIChatApplication.app"
-            BlueprintName = "AIChatApplication"
-            ReferencedContainer = "container:AIChatApplication.xcodeproj">
+            BuildableName = "CheckListApplication.app"
+            BlueprintName = "CheckListApplication"
+            ReferencedContainer = "container:CheckListApplication.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AIChatApplication.app"
-            BlueprintName = "AIChatApplication"
-            ReferencedContainer = "container:AIChatApplication.xcodeproj">
+            BuildableName = "CheckListApplication.app"
+            BlueprintName = "CheckListApplication"
+            ReferencedContainer = "container:CheckListApplication.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
