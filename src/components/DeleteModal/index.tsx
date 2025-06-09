@@ -68,7 +68,9 @@ const DeleteModal: React.FC<Props> = ({ visible, onClose, onConfirm, eventName }
     },
     buttonText: {
       color: theme.primaryText,
-      fontWeight: 'bold',
+    },
+    deleteText: {
+      color: theme.warningText,
     },
   });
 
@@ -94,7 +96,7 @@ const DeleteModal: React.FC<Props> = ({ visible, onClose, onConfirm, eventName }
               style={[styles.button, styles.confirmButton]}
               onPress={onConfirm}
             >
-              <Text style={styles.buttonText}>确认删除</Text>
+              <Text style={styles.deleteText}>确认删除</Text>
             </TouchableOpacity>
           </View>
         </View>

@@ -7,6 +7,7 @@ const themes = {
     boxBg: '#222226',
     primaryText: '#ffffff',
     secondaryText: '#d9d9d9',
+    warningText: '#e8175d',
     borderColor: '#36353f',
   },
   light: {
@@ -16,6 +17,7 @@ const themes = {
     boxBg: '#e3e3ff',
     primaryText: '#000000',
     secondaryText: '#212121',
+    warningText: '#e8175d',
     borderColor: '#e4d8ff',
   },
 };
