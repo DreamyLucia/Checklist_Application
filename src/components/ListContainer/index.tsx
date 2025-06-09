@@ -4,6 +4,7 @@ import { Checkbox, List } from '@ant-design/react-native';
 import { EventItem } from '@src/types/event';
 import { themes } from '@src/styles';
 import Icon from '@react-native-vector-icons/evil-icons';
+import { formatDateTime } from '@src/utils/dateFormatter';
 
 interface Props {
   list: EventItem[];
@@ -89,7 +90,7 @@ const ListContainer: React.FC<Props> = ({ list, onEdit, onToggle, onDelete }) =>
           {item.event}
         </Text>
         <Text style={styles.timeText}>
-          {item.createdAt.toLocaleString()}
+          {formatDateTime(item.createdAt)}
         </Text>
       </List.Item>
     )}
