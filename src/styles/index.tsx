@@ -11,12 +11,12 @@ const themes = {
   },
   light: {
     primary: '#7757c0',
-    normalBg: '#fffff',
-    bodyBg: '#efefff',
+    normalBg: '#efefff',
+    bodyBg: '#e1e1ff',
     boxBg: '#e3e3ff',
     primaryText: '#000000',
     secondaryText: '#212121',
-    borderColor: 'e4d8ff',
+    borderColor: '#e4d8ff',
   },
 };
 

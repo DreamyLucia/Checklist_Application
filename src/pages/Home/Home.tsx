@@ -8,19 +8,9 @@ import DeleteModal from '@src/components/DeleteModal';
 import { EventItem } from '@src/types/event';
 import { themes } from '@src/styles';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useTheme } from '@src/hooks/useTheme';
 
 const STORAGE_KEY = '@event_list';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    backgroundColor: themes.dark.normalBg,
-  },
-  list: {
-    flex: 1,
-  },
-});
 
 const Home: React.FC = () => {
   const [list, setList] = useState<EventItem[]>([]);
@@ -29,6 +19,20 @@ const Home: React.FC = () => {
   const [editingId, setEditingId] = useState<number | null>(null);
   const [deleteVisible, setDeleteVisible] = useState(false);
   const [deletingId, setDeletingId] = useState<number | null>(null);
+
+  const { isDarkMode } = useTheme();
+  const theme = themes[isDarkMode ? 'dark' : 'light'];
+
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      flexDirection: 'column',
+      backgroundColor: theme.normalBg,
+    },
+    list: {
+      flex: 1,
+    },
+  });
 
   // 加载保存的数据
   useEffect(() => {
