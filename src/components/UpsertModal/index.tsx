@@ -34,7 +34,7 @@ const UpsertModal: React.FC<Props> = ({ visible, onClose, onConfirm, defaultValu
       justifyContent: 'center',
       alignItems: 'center',
       width: '80%',
-      backgroundColor: themeReverse.bodyBg,
+      backgroundColor: themeReverse.normalBg,
       borderRadius: 8,
       padding: 16,
     },
@@ -43,13 +43,21 @@ const UpsertModal: React.FC<Props> = ({ visible, onClose, onConfirm, defaultValu
       fontSize: 24,
       fontWeight: 'bold',
       marginBottom: 16,
+      paddingBottom: 4,
+      paddingHorizontal: 8,
       textAlign: 'center',
+      borderBottomColor: themeReverse.borderColor,
+      borderBottomWidth: 4,
+    },
+    inputContainer: {
+      marginHorizontal: 12,
     },
     input: {
       alignItems: 'center',
       color: themeReverse.secondaryText,
+      backgroundColor: themeReverse.boxBg,
       height: 32,
-      marginVertical: 8,
+      marginBottom: 16,
     },
     modalInputText: {
       color: themeReverse.primaryText,
@@ -96,13 +104,15 @@ const UpsertModal: React.FC<Props> = ({ visible, onClose, onConfirm, defaultValu
           <Text style={styles.modalTitle}>
             {defaultValue ? '编辑事件' : '新建事件'}
           </Text>
-          <Input
-            value={value}
-            onChangeText={setValue}
-            placeholder={defaultValue ? defaultValue : '事件内容'}
-            style={styles.input}
-            inputStyle={styles.modalInputText}
-          />
+          <View style={styles.inputContainer}>
+            <Input
+              value={value}
+              onChangeText={setValue}
+              placeholder={defaultValue ? defaultValue : '事件内容'}
+              style={styles.input}
+              inputStyle={styles.modalInputText}
+            />
+          </View>
           <View style={styles.buttonContainer}>
             <TouchableOpacity
               style={[styles.button, styles.cancelButton]}
