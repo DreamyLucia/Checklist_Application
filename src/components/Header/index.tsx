@@ -1,8 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { themes } from '@src/styles';
 import { useTheme } from '@src/hooks/useTheme';
-import Icon from '@react-native-vector-icons/evil-icons';
 
 const Header: React.FC = () => {
   const { isDarkMode } = useTheme();
